@@ -1,0 +1,45 @@
+img[alt="Instagram"] {
+  display:contents;
+}
+
+@media (min-width: 576px) {
+  .navitems{
+    flex-direction: row!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .short-photos{
+    max-height: 9rem;
+    overflow: hidden;
+  }
+  .long-photos{
+    max-height: 18rem;
+    overflow: hidden;
+  }
+}
+
+.navitems {
+  flex-direction: column;
+  align-items: end;
+  --bs-navbar-brand-font-size: 2rem;
+}
+
+.bg-light {
+  background-color: var(--logo-light)!important;
+}
+.bg-dark {
+  background-color: var(--logo-dark)!important;
+}
+
+.textoverlay {
+  opacity: 75%;
+  width: 100%;
+  color: black!important;
+}
+
+:root {
+  --logo-light: #e5eaf0;
+  --logo-dark: #bed2de;
+  --bs-body-font-family: "Roboto", sans-serif;
+}
